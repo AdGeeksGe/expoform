@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: TBC Contractica Regular;
+    src: url(https://framerusercontent.com/assets/hP9XOqApaHftQ7J0aliFBjhfaZA.woff2);
+    font-display: swap
+}
+
+body {
+    font-family: TBC Contractica Regular, sans-serif;
+}
