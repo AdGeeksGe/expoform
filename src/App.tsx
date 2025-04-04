@@ -95,7 +95,7 @@ function App() {
                 onChange={handleChange}
                 placeholder="სახელი"
                 required
-                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-violet-500 focus:border-transparent"
               />
             </div>
 
@@ -108,7 +108,7 @@ function App() {
                 onChange={handleChange}
                 placeholder="გვარი"
                 required
-                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-violet-500 focus:border-transparent"
               />
             </div>
 
@@ -121,7 +121,7 @@ function App() {
                 onChange={handleChange}
                 placeholder="ტელეფონის ნომერი"
                 required
-                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-violet-500 focus:border-transparent"
               />
             </div>
 
@@ -134,7 +134,7 @@ function App() {
                 onChange={handleChange}
                 placeholder="ელ-ფოსტა"
                 required
-                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-violet-500 focus:border-transparent"
               />
             </div>
           </div>
@@ -146,7 +146,7 @@ function App() {
               checked={formData.acceptTerms}
               onChange={handleChange}
               required
-              className="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+              className="mt-1 h-4 w-4 rounded border-gray-300 text-violet-600 focus:ring-violet-500"
             />
             <label className="ml-2 block text-sm text-gray-700">
               ვეთანხმები წესებს და პირობებს
@@ -156,7 +156,7 @@ function App() {
           <button
             type="submit"
             disabled={loading}
-            className={`w-full py-2 px-4 border border-transparent text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
+            className={`w-full py-2 px-4 border border-transparent text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 ${
               loading ? 'opacity-75 cursor-not-allowed' : ''
             }`}
           >
