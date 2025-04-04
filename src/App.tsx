@@ -41,10 +41,10 @@ function App() {
       console.log('Server response:', data);
 
       if (!response.ok) {
-        throw new Error(data.details || data.error || 'Failed to send email');
+        throw new Error(data.details || data.error || 'რეგისტრაციისას მოხდა შეცდომა');
       }
 
-      setMessage({ type: 'success', text: 'Message sent successfully!' });
+      setMessage({ type: 'success', text: 'თქვენი წარმატებით დარეგისტრირდით!' });
       setFormData({
         name: '',
         surname: '',
@@ -56,7 +56,7 @@ function App() {
       console.error('Form submission error:', error);
       setMessage({ 
         type: 'error', 
-        text: error instanceof Error ? error.message : 'Failed to send message. Please try again.' 
+        text: error instanceof Error ? error.message : 'რეგისტრაციისას მოხდა შეცდომა, გთხოვთ, სცადოთ კიდევ ერთხელ.' 
       });
     } finally {
       setLoading(false);
@@ -74,7 +74,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8">
-        <h1 className="text-2xl font-bold text-gray-800 mb-6 text-center">Contact Us</h1>
+        <h1 className="text-2xl font-bold text-gray-800 mb-6 text-center">შეავსე ფორმა</h1>
         
         {message && (
           <div className={`mb-4 p-4 rounded ${
@@ -93,7 +93,7 @@ function App() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Name"
+                placeholder="სახელი"
                 required
                 className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
@@ -106,7 +106,7 @@ function App() {
                 name="surname"
                 value={formData.surname}
                 onChange={handleChange}
-                placeholder="Surname"
+                placeholder="გვარი"
                 required
                 className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
@@ -119,7 +119,7 @@ function App() {
                 name="tel"
                 value={formData.tel}
                 onChange={handleChange}
-                placeholder="Phone Number"
+                placeholder="ტელეფონის ნომერი"
                 required
                 className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
@@ -132,7 +132,7 @@ function App() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Email"
+                placeholder="ელ-ფოსტა"
                 required
                 className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
@@ -149,7 +149,7 @@ function App() {
               className="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
             />
             <label className="ml-2 block text-sm text-gray-700">
-              I accept the terms and conditions
+              ვეთანხმები წესებს და პირობებს
             </label>
           </div>
 
