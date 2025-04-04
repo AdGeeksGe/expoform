@@ -43,9 +43,12 @@ Deno.serve(async (req) => {
       to: emailData.email,
       subject: 'EV EXPOSITION!',
       text: `
-        გამარჯობა ${emailData.name} ${emailData.surname},
-        მადლობა დაინტერესებისთვის. თქვენ წარმატებით დარეგისტრირდით.
-        მოუთმენლად გელით!
+        Hello ${emailData.name} ${emailData.surname},
+        Thank you for your interest in our event. We have received your registration details.
+        We are looking forward to seeing you there!
+        Phone: ${emailData.tel}
+        Email: ${emailData.email}
+        Accepted Terms: ${emailData.acceptTerms}
       `,
     };
 
