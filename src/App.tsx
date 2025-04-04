@@ -72,8 +72,8 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-      <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8">
+    <div className="min-h-screen flex items-center justify-center p-4">
+      <div className="max-w-md w-full bg-white p-8">
         <h1 className="text-2xl font-bold text-gray-800 mb-6 text-center">შეავსე ფორმა</h1>
         
         {message && (
