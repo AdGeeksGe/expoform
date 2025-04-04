@@ -121,7 +121,7 @@ function App() {
                 onChange={handleChange}
                 placeholder="ტელეფონის ნომერი"
                 required
-                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-violet-500 focus:border-transparent"
+                className="w-full pl-4 pr-4 py-2 border border-white-300 focus:ring focus:ring-violet-500 focus:border-transparent background-transparent"
               />
             </div>
 
