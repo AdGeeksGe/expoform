@@ -121,7 +121,7 @@ function App() {
                 onChange={handleChange}
                 placeholder="ტელეფონის ნომერი"
                 required
-                className="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-blue-500 focus:border-transparent"
               />
             </div>
 
@@ -134,7 +134,7 @@ function App() {
                 onChange={handleChange}
                 placeholder="ელ-ფოსტა"
                 required
-                className="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-blue-500 focus:border-transparent"
               />
             </div>
           </div>
@@ -156,7 +156,7 @@ function App() {
           <button
             type="submit"
             disabled={loading}
-            className={`w-full py-2 px-4 border border-transparent rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
+            className={`w-full py-2 px-4 border border-transparent text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
               loading ? 'opacity-75 cursor-not-allowed' : ''
             }`}
           >
