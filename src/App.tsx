@@ -160,7 +160,7 @@ function App() {
               loading ? 'opacity-75 cursor-not-allowed' : ''
             }`}
           >
-            {loading ? 'Sending...' : 'Send Message'}
+            {loading ? 'გთხოვთ მოიცადოთ...' : 'რეგისტრაცია'}
           </button>
         </form>
       </div>
