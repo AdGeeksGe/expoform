@@ -95,7 +95,7 @@ function App() {
                 onChange={handleChange}
                 placeholder="სახელი"
                 required
-                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-blue-500 focus:border-transparent"
               />
             </div>
 
@@ -108,7 +108,7 @@ function App() {
                 onChange={handleChange}
                 placeholder="გვარი"
                 required
-                className="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-4 pr-4 py-2 border border-gray-300 focus:ring focus:ring-blue-500 focus:border-transparent"
               />
             </div>
 
