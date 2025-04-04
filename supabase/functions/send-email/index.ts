@@ -41,15 +41,11 @@ Deno.serve(async (req) => {
     const message = {
       from: Deno.env.get('SMTP_FROM')!,
       to: emailData.email,
-      subject: 'New Contact Form Submission',
+      subject: 'EV EXPOSITION!',
       text: `
-        New contact form submission:
-        
-        Name: ${emailData.name}
-        Surname: ${emailData.surname}
-        Phone: ${emailData.tel}
-        Email: ${emailData.email}
-        Accepted Terms: ${emailData.acceptTerms}
+        Hello ${emailData.name} ${emailData.surname},
+        Thank you for your interest in our event. We have received your registration details.
+        We are looking forward to seeing you there!
       `,
     };
 
