@@ -11,3 +11,8 @@
 body {
     font-family: TBC Contractica Regular, sans-serif;
 }
+
+input{
+    background-color: transparent;
+    color: white;
+}
