@@ -148,7 +148,7 @@ function App() {
               required
               className="mt-1 h-4 w-4 rounded border-gray-300 text-violet-600 focus:ring-violet-500"
             />
-            <label className="ml-2 block text-sm text-gray-700">
+            <label className="ml-2 block text-sm text-white">
               ვეთანხმები წესებს და პირობებს
             </label>
           </div>
